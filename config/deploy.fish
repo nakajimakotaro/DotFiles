@@ -1,6 +1,6 @@
 #!/usr/bin/fish
 
-#init.shから呼び出される事が前提
+cd (dirname (status -f))
 
 set ConfigPath (pwd)/config
 
