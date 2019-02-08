@@ -8,4 +8,4 @@ ln -sf $ConfigPath/init.vim ~/.config/nvim/
 ln -sf $ConfigPath/config.fish ~/.config/fish/
 ln -sf $ConfigPath/mpv.conf ~/.config/mpv/
 ln -sf $ConfigPath/gitconfig ~/.gitconfig
-ln -sf $ConfigPath/locate.conf ~config/
+ln -sf $ConfigPath/profile ~/.profile
