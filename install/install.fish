@@ -2,8 +2,19 @@
 
 cd (dirname (status -f))
 
-curl -L https://github.com/Jguer/yay/releases/download/v8.1173.0/yay_8.1173.0_x86_64.tar.gz | tar xz --strip-components=1 --no-anchored yay
-./yay -Syu --noconfirm yay-bin
-rm ./yay
-
 yay -Syu --noconfirm - < package.list
+
+#pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python ./get-pip.py
+rm ./get-pip.py
+
+#deoplete
+pip3 install --user pynvim
+nvim -c 'UpdateRemotePlugins' -c 'q'
+
+#haskell
+curl -sSL https://get.haskellstack.org/ | sudo sh
+stack setup
+stack update
+stack upgrade
