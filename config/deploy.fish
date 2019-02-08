@@ -9,3 +9,4 @@ ln -sf $ConfigPath/config.fish ~/.config/fish/
 ln -sf $ConfigPath/mpv.conf ~/.config/mpv/
 ln -sf $ConfigPath/gitconfig ~/.gitconfig
 ln -sf $ConfigPath/profile ~/.profile
+ln -sf $ConfigPath/user-dirs.dirs ~/.config/
